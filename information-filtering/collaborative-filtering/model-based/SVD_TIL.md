@@ -23,7 +23,9 @@
 - 직교하는 벡터 집합에 대하여, 선형 변환 후에 그 크기는 변하지만 여전히 직교할 수 있게 되는 그 직교 집합은 여러 개
   - 선형 변환 후의 크기를 singular value라고 하고 크기가 큰 값부터 $\Sigma_1, \Sigma_2, \cdots, \Sigma_n$으로 정렬
   - $A = U \Sigma V^T$
+
     - $V = \begin{pmatrix} \vec{x} & \vec{y} \end{pmatrix}$, $\quad U = \begin{pmatrix} \vec{u}_1 & \vec{u}_2 \end{pmatrix}$, $\quad \Sigma = \begin{pmatrix} \sigma_1 & 0 \\ 0 & \sigma_2 \end{pmatrix}$
+
     - 선형 변환의 관점에서 네 개의 행렬 ($A, U, \Sigma, V$)의 관계를 생각하면 다음과 같다.
     - $AV = U \Sigma$ : 즉, "V에 있는 열벡터 ($\vec{x}$ 혹은 $\vec{y}$)를 행렬A를 통해 선형 변환할 때, 그 크기는 $\Sigma_1, \Sigma_2$만큼 변하지만, 여전히 직교하는 벡터들 $\vec{u}_1, \vec{u}_2$를 찾을 수 있는가? 라고 묻는 것이다.
     - 그러면 V는 orthogonal matrix이므로 $V^-1 = V^T$이기 때문에,
